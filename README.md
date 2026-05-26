@@ -9,3 +9,5 @@ public updates.
 For app downloads, use the `.dmg` file attached to each GitHub Release.
 GitHub's automatic "Source code" zip/tar.gz archives contain only this public
 update-feed repository, not the private DisplayHelper app source code.
+
+Privacy policy: <https://samx2015.github.io/DisplayHelperUpdates/privacy.html>
