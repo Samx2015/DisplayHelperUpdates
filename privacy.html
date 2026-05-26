@@ -89,9 +89,49 @@
         margin-top: 4px;
       }
 
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
+        margin: 2px 0 28px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--line);
+      }
+
+      .summary div {
+        min-height: 96px;
+        padding: 16px;
+        background: var(--paper);
+      }
+
+      .summary strong,
+      .summary span {
+        display: block;
+      }
+
+      .summary strong {
+        margin-bottom: 4px;
+      }
+
+      .summary span {
+        color: var(--muted);
+      }
+
       .effective-date {
         color: var(--muted);
         font-weight: 650;
+      }
+
+      @media (max-width: 720px) {
+        .summary {
+          grid-template-columns: 1fr;
+        }
+
+        .summary div {
+          min-height: 0;
+        }
       }
     </style>
   </head>
@@ -106,6 +146,21 @@
     </header>
 
     <main>
+      <section class="summary" aria-label="Privacy highlights">
+        <div>
+          <strong>No account</strong>
+          <span>No sign-in, subscription account, or user profile.</span>
+        </div>
+        <div>
+          <strong>No analytics</strong>
+          <span>No event tracking, session tracking, advertising pixels, or usage telemetry.</span>
+        </div>
+        <div>
+          <strong>No automatic reports</strong>
+          <span>Feedback opens an email draft. Nothing is sent unless you choose Send.</span>
+        </div>
+      </section>
+
       <section>
         <h2>Data Collection</h2>
         <p>
