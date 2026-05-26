@@ -211,18 +211,24 @@
           mirroring state, and current app status. Your email address is visible to Xintech LLC only
           if you send the email.
         </p>
+        <p>
+          Bug report drafts also include a bounded excerpt of recent DisplayHelper diagnostic logs.
+          Feature request and general feedback drafts do not include logs.
+        </p>
       </section>
 
       <section>
         <h2>Diagnostics and Logs</h2>
         <p>
           DisplayHelper writes diagnostic messages to Apple's local unified logging system. These
-          logs are stored locally by macOS. Choosing "Copy Recent Logs" collects recent
-          DisplayHelper logs and copies them to your clipboard.
+          logs are stored locally by macOS. Choosing "Report a Bug..." collects a bounded
+          DisplayHelper-only log excerpt and inserts it into the email draft.
         </p>
         <p>
-          Logs are never attached to feedback emails automatically. If you want to include logs in a
-          support email, you must choose "Copy Recent Logs" and paste them yourself.
+          The log excerpt uses the last 20 minutes of DisplayHelper logs when available. If there
+          are too few recent entries, the app may look back up to 24 hours and include the most
+          recent DisplayHelper entries, capped at 180 lines and 16,000 characters. Nothing is sent
+          unless you choose Send, and you can delete the log excerpt first.
         </p>
       </section>
 
@@ -230,7 +236,7 @@
         <h2>Your Choices</h2>
         <ul>
           <li>You can leave feedback drafts unsent, edit them, or delete diagnostic details.</li>
-          <li>You can avoid including logs unless you choose to copy and paste them.</li>
+          <li>You can delete diagnostic summaries or log excerpts before sending bug reports.</li>
           <li>You can disable automatic update checks in the Sparkle update preferences.</li>
           <li>You can remove local app preferences using normal macOS preference-management tools.</li>
         </ul>
