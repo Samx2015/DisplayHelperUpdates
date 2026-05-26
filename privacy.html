@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DisplayHelper Privacy Policy</title>
+    <meta
+      name="description"
+      content="DisplayHelper's privacy policy for local display controls, update checks, feedback emails, diagnostics, and support contact."
+    >
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #141716;
+        --muted: #5f6763;
+        --paper: #f7f8f6;
+        --line: #dfe4df;
+        --teal: #006d6d;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: #fff;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--teal);
+        font-weight: 700;
+      }
+
+      header,
+      main,
+      footer {
+        width: min(100%, 880px);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      header {
+        padding-top: 56px;
+        padding-bottom: 32px;
+      }
+
+      main {
+        padding-bottom: 56px;
+      }
+
+      footer {
+        padding-top: 24px;
+        padding-bottom: 32px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .kicker {
+        margin: 0 0 12px;
+        color: var(--teal);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 0 0 18px;
+        font-size: clamp(2.2rem, 6vw, 4rem);
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 42px 0 10px;
+        font-size: 1.5rem;
+        line-height: 1.18;
+      }
+
+      p {
+        margin: 0 0 16px;
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 0 0 18px;
+        padding-left: 22px;
+        color: var(--muted);
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
+        margin: 28px 0 36px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--line);
+      }
+
+      .summary div {
+        min-height: 116px;
+        padding: 18px;
+        background: var(--paper);
+      }
+
+      .summary strong,
+      .summary span {
+        display: block;
+      }
+
+      .summary strong {
+        margin-bottom: 6px;
+      }
+
+      .summary span {
+        color: var(--muted);
+      }
+
+      .effective-date {
+        color: var(--teal);
+        font-weight: 800;
+      }
+
+      @media (max-width: 720px) {
+        header {
+          padding-top: 36px;
+        }
+
+        .summary {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p class="kicker">DisplayHelper privacy policy</p>
+      <h1>Local by design. Clear about every way data can leave your Mac.</h1>
+      <p>
+        DisplayHelper is a local-first macOS menu-bar utility for controlling the built-in
+        display in mirrored Mac setups.
+      </p>
+      <p class="effective-date">Effective date: May 26, 2026</p>
+    </header>
+
+    <main>
+      <section class="summary" aria-label="Privacy summary">
+        <div>
+          <strong>No account</strong>
+          <span>No sign-in, subscription account, or user profile.</span>
+        </div>
+        <div>
+          <strong>No analytics</strong>
+          <span>No event tracking, session tracking, advertising pixels, or usage telemetry.</span>
+        </div>
+        <div>
+          <strong>No automatic reports</strong>
+          <span>Feedback opens an email draft. Nothing is sent unless you choose Send.</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Data Collection</h2>
+        <p>
+          DisplayHelper does not collect, store, sell, share, or transmit personal information
+          through its display-management features. Xintech LLC does not receive information about
+          your displays, settings, usage, or device from the app unless you intentionally send it
+          through email support.
+        </p>
+        <ul>
+          <li>No account is required.</li>
+          <li>No analytics, tracking SDKs, advertising SDKs, or crash-reporting SDKs are included.</li>
+          <li>No background telemetry is sent to Xintech LLC.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Local Data</h2>
+        <p>
+          DisplayHelper may store a small amount of local preference data on your Mac using macOS
+          UserDefaults. This is used only to make the app behave consistently between launches.
+        </p>
+        <p>Local preferences may include:</p>
+        <ul>
+          <li>Whether automatic blackout is enabled or disabled.</li>
+          <li>A local display identifier used to remember the preferred external display for mirroring.</li>
+        </ul>
+        <p>
+          The app uses macOS display APIs to inspect display layout, detect mirroring, adjust
+          built-in display brightness, manage Start at Login when you enable it, and restore a fixed
+          safe brightness value when needed. DisplayHelper does not store your previous brightness.
+        </p>
+      </section>
+
+      <section>
+        <h2>Network Activity</h2>
+        <p>
+          DisplayHelper's normal display controls do not require a network connection. The app may
+          contact the public Sparkle update feed when automatic update checks are enabled or when
+          you choose "Check for Updates..." from the menu.
+        </p>
+        <p>
+          Update checks are used only to learn whether a newer version is available. They are not
+          used for advertising, analytics, account tracking, or usage tracking.
+        </p>
+      </section>
+
+      <section>
+        <h2>Bug Reports, Feature Requests, and Feedback</h2>
+        <p>
+          The "Report a Bug...", "Suggest a Feature...", and "Send Feedback..." menu items open a
+          draft in your default email app addressed to Xintech LLC. The app does not send email
+          automatically. You can review, edit, or delete the draft before sending it.
+        </p>
+        <p>
+          The draft may include a short diagnostic summary so support can understand the context:
+          app version, macOS version, processor architecture, Auto Blackout state, built-in
+          mirroring state, and current app status. Your email address is visible to Xintech LLC only
+          if you send the email.
+        </p>
+      </section>
+
+      <section>
+        <h2>Diagnostics and Logs</h2>
+        <p>
+          DisplayHelper writes diagnostic messages to Apple's local unified logging system. These
+          logs are stored locally by macOS. Choosing "Copy Recent Logs" collects recent
+          DisplayHelper logs and copies them to your clipboard.
+        </p>
+        <p>
+          Logs are never attached to feedback emails automatically. If you want to include logs in a
+          support email, you must choose "Copy Recent Logs" and paste them yourself.
+        </p>
+      </section>
+
+      <section>
+        <h2>Your Choices</h2>
+        <ul>
+          <li>You can use DisplayHelper without creating an account.</li>
+          <li>You can leave feedback drafts unsent, edit them, or delete diagnostic details.</li>
+          <li>You can avoid including logs unless you choose to copy and paste them.</li>
+          <li>You can disable automatic update checks in the Sparkle update preferences.</li>
+          <li>You can remove local app preferences using normal macOS preference-management tools.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          For privacy questions or support, contact Xintech LLC at
+          <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
+        </p>
+        <p>
+          Xintech LLC may update this policy if DisplayHelper's behavior changes. The effective date
+          above will change when the policy changes.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <span>DisplayHelper</span>
+      <span> · </span>
+      <a href="https://samx2015.github.io/DisplayHelperUpdates/">Updates</a>
+      <span> · </span>
+      <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>
+    </footer>
+  </body>
+</html>
