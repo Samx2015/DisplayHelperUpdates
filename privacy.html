@@ -129,7 +129,7 @@
   <body>
     <header>
       <h1>DisplayHelper Privacy Policy</h1>
-      <p class="effective-date">Effective date: May 26, 2026</p>
+      <p class="effective-date">Effective date: May 27, 2026</p>
       <p>
         DisplayHelper is a local-first macOS menu-bar utility for controlling the built-in
         display in mirrored Mac setups.
@@ -170,13 +170,15 @@
       <section>
         <h2>Local Data</h2>
         <p>
-          DisplayHelper may store a small amount of local preference data on your Mac using macOS
-          UserDefaults. This is used only to make the app behave consistently between launches.
+          DisplayHelper may store a small amount of local preference data and a bounded local
+          diagnostic log on your Mac. This is used only to make the app behave consistently between
+          launches and to prepare bug-report drafts when you choose to report a bug.
         </p>
         <p>Local preferences may include:</p>
         <ul>
           <li>Whether automatic blackout is enabled or disabled.</li>
           <li>A local display identifier used to remember the preferred external display for mirroring.</li>
+          <li>A small bounded log of DisplayHelper diagnostic messages used for bug-report drafts.</li>
         </ul>
         <p>
           The app uses macOS display APIs to inspect display layout, detect mirroring, adjust
@@ -220,9 +222,10 @@
       <section>
         <h2>Diagnostics and Logs</h2>
         <p>
-          DisplayHelper writes diagnostic messages to Apple's local unified logging system. These
-          logs are stored locally by macOS. Choosing "Report a Bug..." collects a bounded
-          DisplayHelper-only log excerpt and inserts it into the email draft.
+          DisplayHelper writes diagnostic messages to Apple's local unified logging system and
+          keeps a small bounded app-local diagnostic log. These logs are stored locally on your Mac.
+          Choosing "Report a Bug..." collects a bounded DisplayHelper-only excerpt from the
+          app-local log and inserts it into the email draft.
         </p>
         <p>
           The log excerpt uses the last 20 minutes of DisplayHelper logs when available. If there
